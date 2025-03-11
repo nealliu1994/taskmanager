@@ -1,3 +1,4 @@
+require('dotenv').config();
 
 const mongoose = require('mongoose');
 
@@ -10,3 +11,5 @@ const taskSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Task', taskSchema);
+
+console.log("MONGO_URI:", process.env.MONGO_URI);
