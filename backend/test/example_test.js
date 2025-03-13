@@ -131,7 +131,7 @@ describe('Update Function Test', () => {
     await updateTask(req, res);
 
     expect(res.status.calledWith(404)).to.be.true;
-    expect(res.json.calledWith({ message: 'Task not found' })).to.be.true;
+    expect(res.json.calledWith({ message: 'Task not found...' })).to.be.true;
 
     findByIdStub.restore();
   });
