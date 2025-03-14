@@ -38,7 +38,8 @@ jobs:
         echo "Secret 1 is: $MONGO_URI"
         echo "Secret 2 is: $JWT_SECRET"
         echo "Secret 3 is: $PORT"
-      
+    
+        
     - run: pm2 stop all
 
     # Install dependencies for backend
